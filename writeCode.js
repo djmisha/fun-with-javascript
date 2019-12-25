@@ -9,23 +9,43 @@ const writeCode = (hours, distractions) => {
   productivity = codeHours - devDistractions; 
 
   let averageLinesofCode = 50;  // average lines of code written by a dev according to research
-  let averageLinesofCodePerHour;
-  let averageLinesofCodePerMinute;
-  averageLinesofCodePerHour = averageLinesofCode / 6.5; // 6.5 hours of dev time each day 
-  averageLinesofCodePerMinute = averageLinesofCodePerHour / 60;
+  let averageLinesofCodePerMinute = (averageLinesofCode / 6.5) / 60;
 
   let writtenLinesOfCode;
   writtenLinesOfCode = productivity * averageLinesofCodePerMinute;
   writtenLinesOfCode = Math.round(writtenLinesOfCode);
   
   console.log(
-    `The developer coded for ${codeHours} minutes, and had ${devDistractions} minutes of disctrations. He wrote ${writtenLinesOfCode} lines of code/`
+    `The developer coded for ${codeHours} minutes, and had ${devDistractions} minutes of disctrations. He wrote ${writtenLinesOfCode} lines of code,`
    )
 
-  return writtenLinesOfCode;
-  
-	}
+  return writtenLinesOfCode;  
+}
 
 const misha = writeCode(6.5,3);
 
 misha;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
