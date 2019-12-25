@@ -2,7 +2,7 @@ const writeCode = (hours, distractions) => {
   let codeHours = hours;
   codeHours = codeHours * 60; // convert hours to minutes
 
-	let devDistractions = distractions;
+let devDistractions = distractions;
   devDistractions = devDistractions * 15; // for every distraction means lost 15 min 
    
 	let productivity;
